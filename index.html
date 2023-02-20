@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Comments with Stickers</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="comments-section">
+        <p class="eventtitle">We want to</br> hear your advices!</p>
+        <p class="description">This is a user test for an on-campus shared bookshelf project in advance. We'd like to know your feedbacks and tell us your emails if we can talk and interview you!</p>
+        <div class="dividing-line"></div>
+        <h5 class="">All comments:</h5>
+		<div id="add-comment-box" class="hidden">
+            <textarea type="text" id="name-input" placeholder="Your Name" class="comment-name"></textarea>
+			<textarea id="comment-input" placeholder="Your email(Can we ask you more questions?)" class="comment-text"></textarea>
+            <textarea id="reason-input" for="comment" placeholder="What do you think about it?" class="comment-reason"></textarea>
+            <button id="post-comment-button" type="submit">Post</button>
+		</div>
+
+		<div id="comment-list" class="user-inputs">
+			<!-- Comment blocks will be added dynamically here -->
+		</div>
+	</div>
+	<script type="text/javascript" src="display.js"></script>
+</body>
+<footer>
+    <div class="footer-block"></div>
+</footer>
+</html>
