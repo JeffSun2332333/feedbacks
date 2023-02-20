@@ -17,6 +17,13 @@ postCommentButton.addEventListener("click", function (event) {
     var commentValue = commentInput.value;
     var reasonValue = reasonInput.value;
 
+    // Check if the reason input field is empty
+    if (reasonValue === '') {
+        // If the reason input field is empty, show an alert message
+        alert('You forgot to write feedbacks!');
+        return;
+    }
+
     // Create a new comment block element
     var commentBlock = document.createElement("div");
     commentBlock.classList.add("comment-block");
